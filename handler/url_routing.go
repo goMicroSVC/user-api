@@ -1,8 +1,13 @@
 package handler
 
 import (
+	"github.com/gin-gonic/gin"
 	"github.com/goMicroSVC/user-api/controllers/ping"
 	"github.com/goMicroSVC/user-api/controllers/users"
+)
+
+var (
+	router = gin.Default()
 )
 
 func urlMapping() {
